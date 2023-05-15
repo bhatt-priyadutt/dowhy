@@ -9,18 +9,10 @@ import networkx as nx
 import numpy as np
 import pandas as pd
 import scipy.stats as ss
-from numpy.random import choice, random
+from numpy.random import choice
 from sklearn.neural_network import MLPRegressor
 
-from dowhy.utils.graph_operations import (
-    add_edge,
-    convert_to_undirected_graph,
-    del_edge,
-    find_predecessor,
-    get_random_node_pair,
-    get_simple_ordered_tree,
-    is_connected,
-)
+from dowhy.utils.graph_operations import add_edge, del_edge, get_random_node_pair, get_simple_ordered_tree
 
 
 def sigmoid(x):
